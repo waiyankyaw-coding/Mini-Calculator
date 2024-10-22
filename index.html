@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title>Calculator</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href="/images/photo_2024-10-22_12-26-37.jpg">
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/0fc8275b07.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+     
+   </head>
+   <body>
+
+     <div class="c-con">
+        <div class="box-con">
+            <div class="number-board">
+                <input class="n-board" type="text" readonly placeholder="CALCULATOR">
+            </div>
+            <div class="number-box-first-row">
+           <button class="numbers-special"  onclick="AllClear() ">AC</button>
+           <button class="numbers-special" onclick=" Deleat()"><i class="fa-solid fa-delete-left"></i></button>
+           <button class="numbers-special" onclick="specialNum('%')"><i class="fa-solid fa-percent"></i></button>
+           <button class="numbers-special"onclick="specialNum('/')"><i class="fa-solid fa-divide"></i></button>
+            </div>
+
+            
+          <div>
+            <div class="number-box-second-row">
+                <button class="numbers">7</button>
+                <button class="numbers">8</button>
+                <button class="numbers">9</i></button>
+                <button class="numbers-special" onclick="specialNum('*')"><i class="fa-solid fa-multiply"></i></i></button>
+                 </div>
+          </div>
+
+          <div class="number-box-third-row">
+            <button class="numbers">4</button>
+            <button class="numbers">5</button>
+            <button class="numbers">6</i></button>
+            <button class="numbers-special"onclick="specialNum('-')"><i class="fa-solid fa-minus"></i></button>
+             </div>
+
+             
+          <div class="number-box-fourth-row">
+            <button class="numbers">1</button>
+            <button class="numbers">2</button>
+            <button class="numbers">3</i></button>
+            <button class="numbers-special" onclick="specialNum('+')"><i class="fa-solid fa-plus"></i></i></button>
+             </div>
+
+             <div class="number-box-fifth-row">
+                <button class="numbers">00</button>
+                <button class="numbers">0</button>
+                <button class="numbers">.</button>
+                <button class="numbers-special" onclick="Calcu()"><i class="fa-solid fa-equals"></i></button>
+                 </div>
+
+
+                 <div class="text">Power by wai yan kyaw/ v.0.1</div>
+      </div>
+
+      
+        </div>
+
+
+     </div>
+
+    <script src="calculator.js"></script>
+   </body>
+</html>
